@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sanrio Food Menu Website</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="./Assets/Style/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center mt-4 mb-4">Sanrio Cafe</h1>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="https://www.sanrio.com/cdn/shop/articles/Pompompurin_final_LL_copy_1000x.jpg?v=1649105300"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Pompomorin Buns</h5>
+              <p class="card-text">Price: PHP150</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="https://www.sanrio.com/cdn/shop/articles/Final_Image_2_Square_2400px_400x.jpg?v=1660932324"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Tuxedosam Macaroon</h5>
+              <p class="card-text">Price: PHP460</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="https://www.sanrio.com/cdn/shop/articles/HK_Pancakes_FINAL_1_2000x.jpg?v=1663981968"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Hello Kitty Macaroons</h5>
+              <p class="card-text">Price: PHP130</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="https://www.sanrio.com/cdn/shop/articles/Keroppi_Sundae_LL_400x.jpg?v=1657906912"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Keroppi Ice Cream</h5>
+              <p class="card-text">Price: PHP160</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="https://www.sanrio.com/cdn/shop/articles/Badtz-Maru_Bento_Box_Hero_Directions_9_400x.jpg?v=1655335899"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Badtz-maru Bento Box</h5>
+              <p class="card-text">Price: PHP340</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="https://www.sanrio.com/cdn/shop/articles/Final_Image_400x.jpg?v=1614134976"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Pochacco Cookies</h5>
+              <p class="card-text">Price: PHP125</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-md-6">
+          <div class="col-md-12 text-center">
+            <h2>Order Form</h2>
+            <div class="counter mt-3">
+              <span>Total Items Ordered: </span>
+              <span id="totalItems">0</span>
+            </div>
+            <div class="counter mt-3">
+              <span>Pompomorin Buns: </span>
+              <button id="minus1" class="btn btn-secondary">-</button>
+              <span id="quantity1">0</span>
+              <button id="plus1" class="btn btn-secondary">+</button>
+            </div>
+          </div>
+          <div class="col-md-12 text-center">
+            <div class="counter mt-3">
+              <span>Tuxedosam Macaroon: </span>
+              <button id="minus2" class="btn btn-secondary">-</button>
+              <span id="quantity2">0</span>
+              <button id="plus2" class="btn btn-secondary">+</button>
+            </div>
+          </div>
+          <div class="col-md-12 text-center">
+            <div class="counter mt-3">
+              <span>Hello Kitty Macaroons: </span>
+              <button id="minus3" class="btn btn-secondary">-</button>
+              <span id="quantity3">0</span>
+              <button id="plus3" class="btn btn-secondary">+</button>
+            </div>
+          </div>
+          <div class="col-md-12 text-center">
+            <div class="counter mt-3">
+              <span>Keroppi Ice Cream: </span>
+              <button id="minus4" class="btn btn-secondary">-</button>
+              <span id="quantity4">0</span>
+              <button id="plus4" class="btn btn-secondary">+</button>
+            </div>
+          </div>
+          <div class="col-md-12 text-center">
+            <div class="counter mt-3">
+              <span>Badtz-maru Bento Box: </span>
+              <button id="minus5" class="btn btn-secondary">-</button>
+              <span id="quantity5">0</span>
+              <button id="plus5" class="btn btn-secondary">+</button>
+            </div>
+          </div>
+          <div class="col-md-12 text-center">
+            <div class="counter mt-3">
+              <span>Pochacco Cookies: </span>
+              <button id="minus6" class="btn btn-secondary">-</button>
+              <span id="quantity6">0</span>
+              <button id="plus6" class="btn btn-secondary">+</button>
+            </div>
+          </div>
+          <div class="col-md-12 text-center mt-3">
+            <span>Total Bill: PHP</span><span id="totalBill">0</span>
+          </div>
+          <div class="col-md-12 text-center mt-3">
+            <span>Cash: PHP</span
+            ><input type="number" id="cashInput" min="0" step="0.01" />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="col-md-12 text-center">
+            <h2>Customer Information</h2>
+            <div class="form-group mt-3">
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Enter your name"
+              />
+            </div>
+            <div class="form-group mt-3">
+              <label for="address">Address:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="address"
+                placeholder="Enter your address"
+              />
+            </div>
+            <div class="form-group mt-3">
+              <label for="contact">Contact Number:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="contact"
+                placeholder="Enter your contact number"
+              />
+            </div>
+            <div class="col-md-12 text-center mt-3">
+              <button id="submitOrder" class="button">Submit Order</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="invoiceModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="invoiceModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="invoiceModalLabel">Sales Invoice</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" id="invoiceContent"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./Assets/JS/script.js"></script>
+  </body>
+</html>
